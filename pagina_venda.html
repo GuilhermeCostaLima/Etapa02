@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="pagina_venda.css">
+    <title>Camiseta branca básica</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="icons">
+            <i class='bx bx-user-circle'></i>
+            <i class='bx bx-menu'></i>
+            <i class='bx bx-cart' style='color:#ffffff'></i>
+        </div>
+
+    </header>
+
+    <div class="acessibilidade">
+        <i class='bx bx-universal-access'></i>
+    </div>
+
+    <div class="content">
+
+        <div class="camisa1">
+            <div class="camisab1">
+                <img src="/images/b1.png" alt="Imagem" id="imagemCor">
+            </div>
+
+            <div class="info">
+                <div class="nomep">Camiseta Masculina Básica</div>
+                <div class="preco">R$0.00</div>
+                <!-- escolher cor -->
+                <div class="button">
+                    <button class="corb" id="button1" onclick="selecionar(this); escolherCor('b1')"></button>
+                    <button class="corb" id="button2" onclick="selecionar(this); escolherCor('p1')"></button>
+                    <button class="corb" id="button3" onclick="selecionar(this); escolherCor('a1')" "></button>
+                </div>
+                <!-- escolher tamanho -->
+                <div class=" size">
+                        <label for="tamanhos">Tamanhos</label>
+                        <select name="sizes" id="size">
+                            <option value="P">S</option>
+                            <option value="M">M</option>
+                            <option value="G">L</option>
+                            <option value="GG">XL</option>
+                        </select>
+
+                        <span class="frete">
+                            <div class="texto">Calcular frete</div>
+                            <input class="cep" maxlength="9"></input>
+                        </span>
+                </div>
+
+                <div class="provador">
+                    <!-- abrir o link -->
+                    <button class="page"
+                        onclick="abrelink('https://vfr-v3-production.sizebay.technology/V4/?mode=vfr&id=6834318&sid=0268AE364B4D212971b52ba1410399862e3e7bfe2f30&lang=br&tenantId=1039&backdropWidth=1920&backdropHeight=970')">
+                        <i class='bx bx-closet'></i>
+                        Provador Virtual
+                    </button>
+
+                    <button class="page"
+                        onclick="abrelink('https://vfr-v3-production.sizebay.technology/V4/?mode=chart&id=6834318&sid=0268AE364B4D212971b52ba1410399862e3e7bfe2f30&lang=br&tenantId=1039&backdropWidth=1920&backdropHeight=970')">
+                        <i class='bx bx-ruler'></i>
+                        Tabela de Medidas
+                    </button>
+                    <!-- sobreposição -->
+                    <div id="overlay" onclick="fechalink()"></div>
+                    <!-- conteudo principal -->
+                    <div id="page-content"></div>
+                </div>
+
+                <div class="buy">
+                    <button><i class='bx bx-cart'></i>Adicionar ao carrinho</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="desc">
+            <h3>Detalhes do Produto</h3>
+            <hr />
+            <p class="text">Nossa camiseta básica branca é essencial para qualquer guarda-roupa. Feita com tecido macio
+                e
+                confortável, esta camiseta oferece versatilidade e estilo em uma peça simples e atemporal. Perfeita para
+                combinar com qualquer look, desde casual até mais sofisticado.
+            </p>
+            <p class="det">
+                <span>
+                    <ul>
+                        <li class=""> Tecido: Macio</li>
+                        <li class=""> Estilo: Casual</li>
+                        <li class=""> Material: Tecido</li>
+                        <li class=""> Composição: 100% algodão</li>
+                        <li class=""> Modelagem: Padrão</li>
+                        <li class=""> Comprimento da Manga: Manga curta</li>
+                        <li class=""> Tipo de Manga: Ombro caído</li>
+                    </ul>
+                </span>
+            </p>
+            <p class="det">
+                <span>Composição: 100% Algodão.</span>
+            </p>
+            <p class="det">
+                <span>Produção: Feito no Brasil | Fabricação Própria | Nacional </span>
+            </p>
+        </div>
+
+        <div class="aval">
+            <h3>Avaliações</h3>
+            <hr />
+            <div class="aval-content">
+                <div class="aval-conteudo">
+                    <ul>
+                        <li class="nome">
+                            Pessoa 1
+
+                        </li>
+                        <li class="data">01/01/2024</li>
+                        <p>Camiseta confortável e de boa qualidade. Recomendo!</p>
+                    </ul>
+                </div>
+                <div class="aval-conteudo2">
+                    <ul>
+                        <li class="nome">
+                            Pessoa 2
+                        </li>
+                        <li class="data">01/01/2024</li>
+                        <p>Adorei o tecido e o caimento dessa camiseta.</p>
+                    </ul>
+                </div>
+                <div class="aval-conteudo3">
+                    <ul>
+                        <li class="nome">
+                            Pessoa 3
+                        </li>
+                        <li class="data">01/01/2024</li>
+                        <p>Ótima camiseta básica, perfeita para o dia a dia.</p>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/pagina.js"></script>
+</body>
+
+</html>
